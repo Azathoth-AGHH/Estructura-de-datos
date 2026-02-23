@@ -1,0 +1,146 @@
+
+EXPLICACIÓN DEL FUNCIONAMIENTO DEL PROGRAMA (PILA / STACK)
+
+---
+
+¿QUÉ HACE EL CÓDIGO?
+
+El programa implementa una estructura de datos tipo Pila (Stack) utilizando un arreglo.
+
+Permite:
+
+* Insertar elementos en la pila.
+* Eliminar elementos.
+* Trabajar bajo el principio LIFO (Last In, First Out).
+* Mostrar los elementos en el orden en que se retiran.
+
+---
+
+¿QUÉ ES UNA PILA?
+
+Una pila funciona como una torre de platos:
+
+* El último plato que colocas arriba,
+* Es el primero que puedes retirar.
+
+Ejemplo:
+
+Si insertas:
+20 → 40 → 60 → 80
+
+Al retirar saldrá:
+80 → 60 → 40 → 20
+
+---
+
+FUNCIONAMIENTO GENERAL
+
+1. Se crea una clase llamada StackX que define la pila.
+2. Internamente usa un arreglo para almacenar los datos.
+3. Se usa una variable llamada "top" para controlar la posición del elemento superior.
+4. Se insertan varios números en la pila.
+5. Mientras la pila no esté vacía, se eliminan los elementos y se muestran en pantalla.
+
+---
+
+ESTRUCTURA INTERNA DE LA PILA
+
+La clase contiene:
+
+* Un arreglo para guardar los datos.
+* Una variable que indica el tamaño máximo.
+* Una variable que indica la posición del último elemento insertado (top).
+
+Cuando la pila está vacía:
+top = -1
+
+Cuando se inserta un elemento:
+top aumenta en 1
+
+Cuando se elimina un elemento:
+top disminuye en 1
+
+---
+
+LÓGICA DE INSERCIÓN (push)
+
+El método push realiza:
+
+1. Incrementa la variable top.
+2. Guarda el valor en esa posición del arreglo.
+
+Proceso lógico:
+
+top = top + 1
+arreglo[top] = valor
+
+Así el nuevo elemento queda en la parte superior.
+
+---
+
+LÓGICA DE ELIMINACIÓN (pop)
+
+El método pop realiza:
+
+1. Obtiene el valor en la posición top.
+2. Reduce top en 1.
+
+Proceso lógico:
+
+valor = arreglo[top]
+top = top - 1
+
+De esta forma, el elemento superior se elimina de la pila.
+
+---
+
+LÓGICA DEL PROGRAMA PRINCIPAL
+
+1. Se crea una pila con capacidad para 10 elementos.
+2. Se insertan cuatro números (20, 40, 60, 80).
+3. Se utiliza un ciclo while que se ejecuta mientras la pila no esté vacía.
+4. En cada iteración:
+
+   * Se elimina el elemento superior.
+   * Se imprime en pantalla.
+
+---
+
+REPRESENTACIÓN VISUAL
+
+Después de insertar los valores:
+
+[20]
+[20, 40]
+[20, 40, 60]
+[20, 40, 60, 80] ← top
+
+Después del primer pop():
+
+[20, 40, 60] ← top
+
+Y así sucesivamente hasta quedar vacía.
+
+---
+
+TÉCNICAS UTILIZADAS
+
+El programa utiliza:
+
+* Arreglos.
+* Manejo de índices.
+* Clases y objetos.
+* Métodos.
+* Estructura de datos tipo LIFO.
+* Ciclos repetitivos.
+* Control lógico con valores booleanos.
+
+---
+
+COMPLEJIDAD
+
+Las operaciones principales (push y pop) tienen complejidad:
+
+O(1)
+
+Esto significa que siempre tardan el mismo tiempo, sin importar el tamaño de la pila.
