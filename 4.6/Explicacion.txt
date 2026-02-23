@@ -1,0 +1,100 @@
+
+EXPLICACIÓN DEL FUNCIONAMIENTO DEL PROGRAMA (COLA DE PRIORIDAD)
+
+---
+
+¿QUÉ HACE EL CÓDIGO?
+
+El programa implementa una estructura de datos llamada Cola de Prioridad (Priority Queue).
+
+Permite:
+
+* Insertar elementos numéricos.
+* Ordenarlos automáticamente dentro del arreglo.
+* Eliminar siempre el elemento de menor valor.
+* Mostrar los elementos en orden ascendente al retirarlos.
+
+---
+
+¿QUÉ ES UNA COLA DE PRIORIDAD?
+
+Una cola de prioridad es una estructura de datos donde los elementos no se atienden en el orden en que llegan, sino según su prioridad.
+
+En este programa:
+
+* El número más pequeño tiene mayor prioridad.
+* Siempre se elimina primero el valor más pequeño.
+
+---
+
+FUNCIONAMIENTO GENERAL
+
+1. Se crea una clase que representa la cola de prioridad.
+2. Internamente se utiliza un arreglo para almacenar los datos.
+3. Se mantiene una variable que indica cuántos elementos hay actualmente.
+4. Cada vez que se inserta un elemento, se coloca en la posición correcta para mantener el orden.
+5. Cuando se elimina un elemento, siempre se retira el más pequeño.
+6. Se imprimen los elementos hasta que la cola quede vacía.
+
+---
+
+CÓMO FUNCIONA LA INSERCIÓN
+
+Cuando se inserta un número:
+
+1. Si la cola está vacía, se coloca en la primera posición.
+2. Si ya hay elementos:
+
+   * Se recorre el arreglo desde el final hacia el inicio.
+   * Se comparan los valores.
+   * Si el nuevo número es mayor, los elementos se desplazan una posición hacia la derecha.
+   * Se inserta el número en la posición correcta.
+
+Esto hace que el arreglo quede ordenado de mayor a menor.
+
+Ejemplo:
+
+Si se insertan los valores:
+30, 50, 10, 40, 20
+
+Internamente el arreglo queda:
+
+50, 40, 30, 20, 10
+
+---
+
+CÓMO FUNCIONA LA ELIMINACIÓN
+
+El método para eliminar:
+
+* Reduce el contador de elementos.
+* Devuelve el último elemento del arreglo.
+
+Como el arreglo está ordenado de mayor a menor,
+el último elemento siempre es el más pequeño.
+
+Por eso, al imprimir, el resultado es:
+
+10 20 30 40 50
+
+---
+
+VARIABLES IMPORTANTES
+
+* maxSize: tamaño máximo del arreglo.
+* queArray: arreglo donde se almacenan los datos.
+* nItems: cantidad actual de elementos.
+
+---
+
+TÉCNICAS UTILIZADAS
+
+El programa utiliza:
+
+* Arreglos.
+* Ordenamiento por inserción.
+* Control de índices.
+* Clases y objetos.
+* Estructuras repetitivas.
+* Comparaciones.
+
