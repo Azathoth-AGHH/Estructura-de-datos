@@ -1,0 +1,15 @@
+--- REPORTE DE BIBLIOTECA ---
+Fecha: 2026-05-05
+Total libros: 5
+
+LIBROS DISPONIBLES (4):
+  ISBN: 978-0307474728 | Título: Cien Años de Soledad | Autor: Gabriel García Márquez | Año: 1967 | Estado: disponible
+  ISBN: 978-8491050421 | Título: El Quijote | Autor: Miguel de Cervantes | Año: 1605 | Estado: disponible
+  ISBN: 978-8420471983 | Título: Don Juan Tenorio | Autor: José Zorrilla | Año: 1844 | Estado: disponible
+  ISBN: 978-6071612502 | Título: Pedro Páramo | Autor: Juan Rulfo | Año: 1955 | Estado: disponible
+
+LIBROS PRESTADOS (1):
+  ISBN: 1234567 | Título: popo | Autor: caca | Año: 1234 | Estado: prestado
+
+PRÉSTAMOS EN COLA (1):
+  ISBN: 1234567 | Título: popo | Usuario: oscar | Fecha: 2026-05-05

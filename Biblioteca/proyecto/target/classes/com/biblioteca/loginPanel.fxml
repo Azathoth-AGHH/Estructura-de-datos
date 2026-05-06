@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1380.0" style="-fx-background-color: #F5F0E8;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.biblioteca.LoginPanel">
+
+    <!-- LEFT PANEL: branding -->
+    <AnchorPane prefHeight="720" prefWidth="600.0" style="-fx-background-color: #1A3A2A;">
+        <ImageView fitHeight="188.0" fitWidth="235.0" layoutX="141.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+            <image><Image url="@../../LogoBiblioteca.png" /></image>
+        </ImageView>
+        <Label layoutX="170" layoutY="300" text="De Libros" textFill="#D4C5A0">
+            <font><Font name="Pristina" size="56.0" /></font>
+        </Label>
+        <Label layoutX="177.0" layoutY="372.0" text="Tu biblioteca digital" textFill="#8BA888">
+            <font><Font name="Consolas" size="14.0" /></font>
+        </Label>
+    </AnchorPane>
+
+    <!-- RIGHT PANEL: form -->
+    <VBox alignment="CENTER" layoutX="620" layoutY="0" prefHeight="720" prefWidth="760" spacing="0" style="-fx-padding: 0 100;">
+
+        <Label style="-fx-padding: 0 0 32 0;" text="Iniciar Sesión" textFill="#1A3A2A">
+            <font><Font name="Consolas Bold" size="26.0" /></font>
+        </Label>
+
+        <Label alignment="CENTER_LEFT" prefWidth="560" style="-fx-padding: 0 0 5 0;" text="Usuario" textFill="#555555">
+            <font><Font name="Consolas Bold" size="12.0" /></font>
+        </Label>
+        <TextField fx:id="cuentaSesionText" prefHeight="38" prefWidth="560" promptText="Ej: Oscar Mauricio Ramos Garcia" style="-fx-background-color: white; -fx-border-color: #C8BDA0; -fx-border-radius: 6; -fx-background-radius: 6; -fx-font-size: 13px; -fx-padding: 4 12; -fx-border-width: 1.5;">
+            <font><Font name="Consolas" size="13.0" /></font>
+        </TextField>
+
+        <!-- Buttons row -->
+        <HBox alignment="CENTER" prefWidth="560" spacing="12" style="-fx-padding: 28 0 0 0;">
+            <Button fx:id="buttonEntrar" onAction="#entrar" prefHeight="40" prefWidth="260" style="-fx-background-color: #1A3A2A; -fx-text-fill: #D4C5A0; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand; -fx-font-size: 14px;" text="Entrar">
+                <font><Font name="Consolas Bold" size="14.0" /></font>
+            </Button>
+            <Button fx:id="buttonAdmin" onAction="#irAdmin" prefHeight="40" prefWidth="280" style="-fx-background-color: #3A5A30; -fx-text-fill: white; -fx-background-radius: 6; -fx-cursor: hand; -fx-font-size: 13px;" text="Administrador">
+                <font><Font name="Consolas" size="13.0" /></font>
+            </Button>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="8" style="-fx-padding: 18 0 0 0;" />
+
+        <Button fx:id="buttonAtras" contentDisplay="TOP" onAction="#atras" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: trasnsparent; -fx-text-fill: #AAAAAA; -fx-cursor: hand; -fx-font-size: 14px; -fx-border-color: transparent; -fx-padding: 14 0 0 0;" text="&lt;-- Atrás">
+            <font><Font name="Consolas Bold" size="11.0" /></font>
+        </Button>
+
+    </VBox>
+
+</AnchorPane>

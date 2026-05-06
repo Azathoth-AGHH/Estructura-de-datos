@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1375.0" style="-fx-background-color: #F5F0E8;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.biblioteca.DetallesLibro">
+
+    <!-- HEADER -->
+    <AnchorPane layoutX="0" layoutY="0" prefHeight="88" prefWidth="1375" style="-fx-background-color: #1A3A2A;">
+        <ImageView fitHeight="68" fitWidth="88" layoutX="18" layoutY="10" pickOnBounds="true" preserveRatio="true">
+            <image><Image url="@../../LogoBiblioteca.png" /></image>
+        </ImageView>
+        <Label layoutX="115" layoutY="14" text="De Libros" textFill="#D4C5A0">
+            <font><Font name="Pristina" size="44.0" /></font>
+        </Label>
+        <Label layoutX="117" layoutY="58" text="Detalles del Libro" textFill="#8BA888">
+            <font><Font name="Consolas" size="11.0" /></font>
+        </Label>
+        <Button fx:id="botonAtras" layoutX="1220" layoutY="29" onAction="#Volver" style="-fx-background-color: transparent; -fx-text-fill: #D4C5A0; -fx-border-color: #8BA888; -fx-border-radius: 4; -fx-background-radius: 4; -fx-cursor: hand; -fx-font-size: 12px; -fx-padding: 6 14;" text="← Volver">
+            <font><Font name="Consolas" size="12.0" /></font>
+        </Button>
+    </AnchorPane>
+
+    <!-- CARD -->
+    <HBox layoutX="200" layoutY="130" prefWidth="975" spacing="50" style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.12), 16, 0, 0, 5); -fx-padding: 40;">
+
+        <!-- Book cover -->
+        <VBox alignment="CENTER" prefHeight="320" prefWidth="220" style="-fx-background-color: #E8E0CC; -fx-background-radius: 8;">
+            <ImageView fx:id="imgPortada" fitHeight="280" fitWidth="200" preserveRatio="true" pickOnBounds="true" />
+            <Label style="-fx-padding: 4 0 0 0;" text="Portada" textFill="#999999">
+                <font><Font name="Consolas" size="11.0" /></font>
+            </Label>
+        </VBox>
+
+        <!-- Info -->
+        <VBox prefWidth="620" spacing="0">
+            <Label fx:id="lblTitulo" prefWidth="580" text="Título del libro" textFill="#1A3A2A" wrapText="true">
+                <font><Font name="Consolas Bold" size="26.0" /></font>
+            </Label>
+
+            <Label fx:id="lblAutor" style="-fx-padding: 6 0 24 0;" text="Autor" textFill="#5A7A50">
+                <font><Font name="Consolas" size="16.0" /></font>
+            </Label>
+
+            <!-- Divider line -->
+            <AnchorPane prefHeight="2" prefWidth="580" style="-fx-background-color: #E0D8C4; -fx-padding: 0 0 20 0;" />
+
+            <!-- Details grid -->
+            <HBox spacing="60" style="-fx-padding: 20 0 0 0;">
+                <VBox spacing="4">
+                    <Label text="ISBN" textFill="#999999">
+                        <font><Font name="Consolas" size="11.0" /></font>
+                    </Label>
+                    <Label fx:id="lblIsbn" text="—" textFill="#333333">
+                        <font><Font name="Consolas Bold" size="14.0" /></font>
+                    </Label>
+                </VBox>
+                <VBox spacing="4">
+                    <Label text="AÑO" textFill="#999999">
+                        <font><Font name="Consolas" size="11.0" /></font>
+                    </Label>
+                    <Label fx:id="lblAnio" text="—" textFill="#333333">
+                        <font><Font name="Consolas Bold" size="14.0" /></font>
+                    </Label>
+                </VBox>
+                <VBox spacing="4">
+                    <Label text="ESTADO" textFill="#999999">
+                        <font><Font name="Consolas" size="11.0" /></font>
+                    </Label>
+                    <Label fx:id="lblEstado" text="—" textFill="#27ae60">
+                        <font><Font name="Consolas Bold" size="14.0" /></font>
+                    </Label>
+                </VBox>
+            </HBox>
+
+            <VBox style="-fx-padding: 30 0 0 0;">
+                <Button fx:id="btnAccion" mnemonicParsing="false" onAction="#manejarAccionBoton" prefHeight="38.0" prefWidth="140.0" text="Prestar" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand;" />
+            </VBox>
+        </VBox>
+
+    </HBox>
+
+</AnchorPane>

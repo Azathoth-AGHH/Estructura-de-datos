@@ -1,0 +1,16 @@
+000001,Cien Años de Soledad,Gabriel Garcia Marquez,1967,disponible
+000002,Don Quijote de la Mancha,Miguel de Cervantes,1605,disponible
+000003,1984,George Orwell,1949,disponible
+000004,El Principito,Antoine de Saint-Exupéry,1943,disponible
+000005,Rayuela,Julio Cortazar,1963,disponible
+000006,La Sombra del Viento,Carlos Ruiz Zafón,2001,disponible
+000007,Orgullo y Prejuicio,Jane Austen,1813,disponible
+000008,Cronica de una Muerte Anunciada,Gabriel Garcia Marquez,1981,disponible
+000009,Fahrenheit 451,Ray Bradbury,1953,disponible
+000010,El código Da Vinci,Dan Brown,2003,disponible
+000011,Los juegos del hambre,Suzanne Collins,2008,disponible
+000012,Harry Potter y la Piedra Filosofal,J.K. Rowling,1997,disponible
+000013,El señor de los Anillos,J.R.R. Tolkien,1954,disponible
+000014,El Hobbit,J.R.R. Tolkien,1937,disponible
+000015,Drácula,Bram Stoker,1897,disponible
+000016,Frankenstein,Mary Shelley,1818,disponible
